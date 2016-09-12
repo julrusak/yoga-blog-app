@@ -1,7 +1,7 @@
 <div id="myCarousel" class="carousel slide">
   <div class="carousel-inner">
     <div class="item active">
-      <%= link_to image_tag("wheel-beach.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <%= link_to image_tag("carousel-1.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
       <div class="container">
         <div class="carousel-caption">
           <h1>Example headline.</h1>
@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="item">
-      <%= link_to image_tag("wheel-beach.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <%= link_to image_tag("carousel-2.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
       <div class="container">
         <div class="carousel-caption">
           <h1>Another example headline.</h1>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="item">
-      <%= link_to image_tag("wheel-beach.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <%= link_to image_tag("carousel-3.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
       <div class="container">
         <div class="carousel-caption">
           <h1>One more for good measure.</h1>
@@ -31,3 +31,11 @@
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
+ <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
