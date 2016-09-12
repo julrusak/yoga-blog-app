@@ -1,8 +1,8 @@
-<%= image_tag @post.image %>
+<%= image_tag @post.image, size: "300" %>
 <p>
   <strong><%= @post.title %></strong>
 </p>
  
 <p>
-  <%= @post.text %>
+  <%= simple_format(@post.text) %>
 </p>

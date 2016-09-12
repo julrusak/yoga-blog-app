@@ -30,6 +30,7 @@ def edit
 end
 
 def update
+  @post = Post.find(params[:id])
   respond_to do |format|
     if @post.update(post_params)
       format.html { redirect_to posts_url, notice: 'Post was successfully updated.' }

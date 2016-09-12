@@ -5,12 +5,15 @@
     <th>Title</th>
     <th>Text</th>
   </tr>
- 
+ <%= link_to 'New Post', new_post_path, class: 'btn btn-success' %>
+
   <% @posts.each do |post| %>
     <tr>
+      <td><%= image_tag post.image, size: "300" %></td>
       <td><%= post.title %></td>
       <td><%= post.text %></td>
       <td><%= link_to 'Show', post_path(post) %></td>
+      <td><%= link_to 'Edit', edit_post_path(post) %></td>
     </tr>
   <% end %>
 </table>
