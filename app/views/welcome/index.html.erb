@@ -1,29 +1,28 @@
 <div id="myCarousel" class="carousel slide">
   <div class="carousel-inner">
     <div class="item active">
-      <%= link_to image_tag("wheel-beach.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <%= link_to image_tag("carousel-1.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Example headline.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h1> Jul's Yoga Journey!</h1>
+          <p class="lead"><br /><br /></p>
         </div>
       </div>
     </div>
     <div class="item">
-      <%= link_to image_tag("wheel-beach.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <%= link_to image_tag("carousel-2.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p class="lead">Follow me on my journey through yoga teacher training.</p>
         </div>
       </div>
     </div>
     <div class="item">
-      <%= link_to image_tag("wheel-beach.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <%= link_to image_tag("carousel-3.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h1>Namaste</h1>
+          <p class="lead">The light in me bows to the light in you.</p>
         </div>
       </div>
     </div>
@@ -31,3 +30,14 @@
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
+
+ <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+<div class="container">
+
