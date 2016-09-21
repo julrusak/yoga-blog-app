@@ -1,5 +1,27 @@
 	<footer>
-	    <p class="pull-right"><a href="/">Back to top</a></p>
-	    <p>&copy; 2016 Julianna Rusakiewicz</p>
+	    <div id="contact" class="container navbar">
+	    	<div class="pull-right footer-icons">
+			  <i>
+			    <%= link_to "http://www.instagram.com/portablememories", target: '_blank'  do %>
+			      <%= image_tag 'insta.png', width: 50 %>
+			    <% end %>
+			  </i>
+			  <i>
+			    <%= link_to "http://www.twitter.com/juliannarusak", target: '_blank'  do %>
+			      <%= image_tag 'twitter.png', width: 50 %>
+			    <% end %>
+			  </i>
+			  <i>
+			    <%= link_to "http://www.linkedin.com/in/juliannarusak", target: '_blank'  do %>
+			      <%= image_tag 'linkedin.png', width: 50 %>
+			    <% end %>
+			  </i>
+			  <i>
+			    <%= mail_to "juliannarusak@gmail.com" do %>
+			      <%= image_tag 'email.png', width: 50 %>
+			    <% end %>
+			  </i>
+		  </div>
+		</div>
 	</footer>
 </div>
