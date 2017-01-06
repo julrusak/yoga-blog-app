@@ -1,17 +1,33 @@
-<h1>#JulsYogaJourney</h1>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
-  <% @posts.each do |post| %>
-    <tr>
-      <td><%= image_tag post.image, width: 300 %></td>
-      <td><%= post.title %></td>
-      <td><%= post.text %></td>
-      <td><%= link_to 'Show', post_path(post) %></td>
-      <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    </tr>
-  <% end %>
-</table>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>#JulsYogaJourney</h1>
+                    <hr class="small">
+                    <span class="subheading">Thoughts and reflections on movement, meditation, & breath.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <% @posts.each do |post| %>
+              <div class="post-preview">
+                  <%= link_to post_path(post.id) do %>
+                      <h2 class="post-title"><%= post.title %></h2>
+                      <h3 class="post-subtitle"><%= post.text.truncate_words(30) %>...</h3>
+                  <% end %>
+                  <p class="post-meta">Posted on <%= post.created_at.strftime("%b. %d, %Y") %></p>
+              </div>
+              <hr>
+             <% end %>
+          </div>
+      </div>
+</div>
+
+  
