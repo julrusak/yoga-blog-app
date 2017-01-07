@@ -139,7 +139,7 @@ hr.small {
 }
 .intro-header {
   background-color: #777777;
-  background-image: url(carousel-1.png) !important;
+  background-image: url(asset-path('beach-yoga.jpg')) !important;
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -185,6 +185,8 @@ hr.small {
     font-size: 80px;
   }
 }
+
+
 .intro-header .post-heading h1 {
   font-size: 35px;
 }
