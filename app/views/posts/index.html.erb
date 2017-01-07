@@ -1,4 +1,4 @@
-<header class="intro-header" >
+<header class="intro-header posts-header" >
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -20,7 +20,7 @@
               <div class="post-preview">
                   <%= link_to post_path(post.id) do %>
                       <h2 class="post-title"><%= post.title %></h2>
-                      <h3 class="post-subtitle"><%= post.text.truncate_words(30) %>...</h3>
+                      <h3 class="post-subtitle"><%= post.intro.truncate_words(30) %>...</h3>
                   <% end %>
                   <p class="post-meta">Posted on <%= post.created_at.strftime("%b. %d, %Y") %></p>
               </div>

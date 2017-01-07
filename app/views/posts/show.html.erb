@@ -1,4 +1,4 @@
-<header class="intro-header" style="background-image: url(<%= image_tag @post.image %>)">
+<header class="intro-header post-image">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -15,9 +15,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            	<p>
-				  <%= simple_format(@post.text) %>
-				</p>
+			  <%= simple_format(@post.intro) %>
+			  <%= simple_format(@post.text) %>
+			  <%= image_tag(@post.image, width: '100%') %>
+			  <%= simple_format(@post.conclusion) %>
 			</div>
 		</div>
 	</div>

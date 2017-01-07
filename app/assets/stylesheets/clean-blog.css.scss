@@ -137,9 +137,14 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 }
+.posts-header{
+  background-image: url(asset-path('beach-yoga.jpg')) !important;
+}
+.post-image{
+  background-image: url(asset-path('carousel-3.png')) !important;
+}
 .intro-header {
   background-color: #777777;
-  background-image: url(asset-path('beach-yoga.jpg')) !important;
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
