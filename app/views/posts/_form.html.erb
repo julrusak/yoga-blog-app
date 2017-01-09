@@ -11,5 +11,12 @@
 	<%=f.text_area :conclusion, :cols => "100", :rows => "70" %><br>
 	<%= f.label :image %><br>
 	<%=f.file_field :image %>
+
+	<%= f.label "Tags" %><br />
+	<%= f.collection_check_boxes :tag_ids, @tags, :id, :title do |t| %>
+		<%= t.check_box %>
+		<%= t.label %>
+	<% end %><br /><br />
+
 	<%= f.submit %>  
 <% end %>

@@ -143,6 +143,20 @@ hr.small {
 .post-image{
   background-image: url(asset-path('carousel-3.png')) !important;
 }
+.post-body, #about {
+  p {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-size: 25px;
+    color: #333333;
+    line-height: 1.5;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+}
+.post-body img{
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
 .intro-header {
   background-color: #777777;
   background: no-repeat center center;
@@ -167,6 +181,7 @@ hr.small {
   }
 }
 .intro-header .site-heading,
+.intro-header .post-heading,
 .intro-header .page-heading {
   text-align: center;
 }
@@ -290,6 +305,9 @@ footer .copyright {
 }
 .footer-icons{
   opacity: .3;
+  &hover{
+    cursor: pointer !important;
+  }
 }
 .floating-label-form-group {
   font-size: 14px;

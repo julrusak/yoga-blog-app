@@ -6,14 +6,22 @@ end
 
 def show
 	@post = Post.find(params[:id])
+  @post_tags = @post.tags
 end	
 
 def new
 	@post = Post.new
+  @tags = Tag.all
 end
 
 def create
-	@post = Post.new(post_params)
+	@post = Post.create(post_params)
+  @post_tags = params[:post][:tag_ids]
+  @post_tags.each do |tag|
+    if tag != "" 
+      PostTag.create(post_id: @post.id, tag_id: tag)
+    end
+  end
 	respond_to do |format|
     if @post.save
       format.html { redirect_to @post, notice: 'Post was successfully created.' }

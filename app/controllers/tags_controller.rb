@@ -5,6 +5,7 @@ class TagsController < ApplicationController
 
   def show
   	@tag = Tag.find(params[:id])
+    @posts = @tag.posts
   end	
 
   def new
@@ -12,7 +13,7 @@ class TagsController < ApplicationController
   end
 
   def create
-  	@tag = Tag.new(post_params)
+  	@tag = Tag.new(tag_params)
   	respond_to do |format|
       if @tag.save
         format.html { redirect_to @tag, notice: 'Tag was successfully created.' }
@@ -29,8 +30,9 @@ class TagsController < ApplicationController
   end
 
   def update
+    @tag = Tag.find(params[:id])
     respond_to do |format|
-      if @tag.update(post_params)
+      if @tag.update(tag_params)
         format.html { redirect_to tags_url, notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @tag }
       else
@@ -41,8 +43,8 @@ class TagsController < ApplicationController
   end
 
   private
-    def post_params
-      params.require(:post).permit(:title)
+    def tag_params
+      params.require(:tag).permit(:title)
     end
 
 end

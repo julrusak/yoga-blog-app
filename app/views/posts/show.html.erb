@@ -4,7 +4,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <h1><%= @post.title %></h1>
-                    <h2 class="subheading">Thoughts and musings</h2>
+                    <h2 class="subheading"><%= @post.subtitle%></h2>
                 </div>
             </div>
         </div>
@@ -12,13 +12,19 @@
 </header>
 
 <article>
-    <div class="container">
-        <div class="row">
+    <div class="container post-body">
+        <div class="container">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			  <%= simple_format(@post.intro) %>
 			  <%= simple_format(@post.text) %>
 			  <%= image_tag(@post.image, width: '100%') %>
 			  <%= simple_format(@post.conclusion) %>
+			</div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	            <hr />
+	            <% @post_tags.each do |tag| %>
+		            <%= link_to tag.title, tag_path(tag) %> &nbsp &nbsp
+	            <% end %>
 			</div>
 		</div>
 	</div>
