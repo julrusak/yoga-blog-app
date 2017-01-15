@@ -138,10 +138,13 @@ hr.small {
   }
 }
 .posts-header{
-  background-image: url(asset-path('beach-yoga.jpg')) !important;
+  background-image: url(asset-path('tunnel-handstand.jpg')) !important;
+  .site-heading{
+    background: rgba(161, 0, 133, 0.3); 
+  }
 }
 .post-image{
-  background-image: url(asset-path('carousel-3.png')) !important;
+  background-image: url(asset-path('woods-warrior.jpg')) !important;
 }
 .post-body, #about {
   p {
