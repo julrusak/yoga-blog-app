@@ -169,15 +169,17 @@ hr.small {
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
-.intro-header .page-heading {
+.intro-header .page-heading,
+.intro-header .schedule-heading {
   padding: 100px 0 50px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
+  .intro-header .page-heading, 
+  .intro-header .schedule-heading {
+    padding: 170px 0;
   }
 }
 .intro-header .site-heading,
@@ -186,7 +188,8 @@ hr.small {
   text-align: center;
 }
 .intro-header .site-heading h1,
-.intro-header .page-heading h1 {
+.intro-header .page-heading h1, 
+.intro-header .schedule-heading h1 {
   margin-top: 0;
   font-size: 50px;
 }
