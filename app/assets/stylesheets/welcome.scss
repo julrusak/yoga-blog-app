@@ -1,19 +1,52 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.schedule-header{
-	background-image: url(asset-path('bw_side_plank.jpg')) !important;
+body {
+	background-image: url(asset-path('background-bw.jpg')) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 0% 0% !important;
+    background-attachment: fixed !important;
+    background-color: #000000 !important;
 }
 
+.developer-intro, .yoga-intro, .artist-intro {
+    width: 60%;
+    margin-top: 100px;
+	p{
+	    color: white;
+	    font-size: 22px;
+	    line-height: 1.7;
+	    margin-bottom: 25px;
+	}
+}
+.work-sample-row, .yoga-image-row {
+	margin: 50px 20px;
+}
+
+.work-sample-block, .yoga-image-block {
+	display: inline-block;
+	width: 33%;
+	img{
+		max-width:300px;
+	}
+	h3 {
+		color: #fff;
+	}
+}
+
+.yoga-schedule {
+	margin: 150px 0;
+}
 
 .schedule-heading{
     text-align: center;
-    background: rgba(161, 0, 133, 0.3);  
+	color: #fff;
     a{
-    	color: #fff;
+    	color: #fff !important;
     	text-decoration: underline;
     	&:hover {
-    		color: rgba(0,0,0,0.6);
+    		color: rgba(0,0,0,0.6)!important;
     	}
     	&:visited{
     		color:#fff;
@@ -22,5 +55,4 @@
 }
 
 .contact-header{
-	background-image: url(asset-path('nude-window.jpg')) !important;
 }

@@ -2,9 +2,12 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def schedule
+  def artist
   end
 
-  def contact
+  def developer
+  end
+
+  def yogini
   end
 end
