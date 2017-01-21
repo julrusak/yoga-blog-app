@@ -9,6 +9,11 @@ body {
     background-attachment: fixed !important;
     background-color: #000000 !important;
 }
+@media only screen and (max-width: 768px) {
+	body{
+        background-position: 50% 0% !important;
+	}
+}
 
 .home-text{
 	color: rgba(255,255,255,0.6);
@@ -32,12 +37,23 @@ body {
 .work-sample-block, .yoga-image-block {
 	display: inline-block;
 	width: 33%;
+	margin-bottom: 20px;
 	img{
 		max-width:300px;
 	}
 	h3 {
 		color: #fff;
 	}
+}
+
+@media only screen and (max-width: 1032px) {
+	.work-sample-block, .yoga-image-block {
+		width: 100%;
+		text-align: center;
+		img{
+			max-width:500px;
+		}
+	}	
 }
 
 .yoga-schedule {
