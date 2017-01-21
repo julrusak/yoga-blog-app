@@ -9,11 +9,7 @@ body {
     background-attachment: fixed !important;
     background-color: #000000 !important;
 }
-@media only screen and (max-width: 768px) {
-	body{
-        background-position: 50% 0% !important;
-	}
-}
+
 
 .home-text{
 	color: rgba(255,255,255,0.6);
@@ -30,6 +26,7 @@ body {
 	    margin-bottom: 25px;
 	}
 }
+
 .work-sample-row, .yoga-image-row {
 	margin: 50px 20px;
 }
@@ -54,6 +51,23 @@ body {
 			max-width:500px;
 		}
 	}	
+}
+
+@media only screen and (max-width: 768px) {
+	body{
+        background-position: 50% 0% !important;
+	}
+	.developer-intro, .yoga-intro, .artist-intro {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.work-sample-block, .yoga-image-block {
+		width: 100%;
+		text-align: center;
+		img{
+			max-width:200px;
+		}
+	}
 }
 
 .yoga-schedule {
